@@ -14,7 +14,7 @@ const Home = () => {
   const [showType, setShowType] = useState('table');
   useEffect(() => {
     axios
-      .get('http://localhost:8000/books')
+      .get('https://library-backend-64ol.onrender.com/books')
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false); // Set loading to false when data is fetched
